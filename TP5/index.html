@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Express</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Mon Portfolio</h1>
+    <nav>
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">Tous</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="projects-grid">
+      <!-- Injecté par JS -->
+    </div>
+  </main>
+
+  <!-- MODALE -->
+  <div id="modale" class="modale-overlay" aria-hidden="true">
+    <div class="modale-contenu" role="dialog">
+      <button class="close-btn" onclick="fermer()">×</button>
+      <div id="modale-body"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
